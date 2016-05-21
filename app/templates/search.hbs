@@ -1,0 +1,14 @@
+{{log model}}
+
+
+{{outlet}}
+
+
+{{#each model as |rental|}}
+	<span> alllo </span>
+	{{#each rental.weather as |weather|}}
+		<h4> {{weather.description}} </h4>
+	{{/each}}
+{{/each}}
+
+{{outlet}}
