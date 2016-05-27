@@ -30,7 +30,14 @@ var res = [{"coord":{"lon":-122.09,"lat":37.39},
 */
 
 export default Ember.Route.extend({
-	model(zipcode) {
-		return $.get("/exampledata.json");
+	queryParams: {
+	    zipcode: {
+	      refreshModel: true
+	    }
+	  },
+
+	model(params) {
+		console.log(params["zipcode"]);		
+		return $.get("http://api.openweathermap.org/data/2.5/forecast/city?id=5101760&APPID=6ff88fbecebc7f35ecaf94b05f2a81f5");
 	}
 });

@@ -1,2 +1,7 @@
-<span> Zip code: </span><input type="text" name="zip" id="zip">
-<!-- right side of the screen --> <button {{action 'searchWeather' '08873' }} > Submit </button>
+<!-- right side of the screen  <button {{action 'searchWeather' '08873' }} > Submit </button>-->
+<form name="searchWeather" action="search">
+	<span> Zip code: </span>
+		<input type="text" name="zipcode" id="zip">
+
+	<input type="submit">
+</form>

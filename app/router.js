@@ -6,7 +6,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('search', {path: '/search/:zip_code'});
+  this.route('search', {path: '/search'});
 });
 
 export default Router;
